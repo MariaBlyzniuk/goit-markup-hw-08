@@ -1,0 +1,156 @@
+.form {
+  color: #212121;
+
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .form__button {
+    padding: 10px 55px;
+    border-radius: 4px;
+    min-width: 200px;
+
+    color: $first-background-color;
+    background-color: $accent-color;
+    border-color: transparent;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+.form-field__text {
+  font-weight: inherit;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $primary-text-color;
+  text-align: start;
+  margin-bottom: 4px;
+}
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: transform 250ms $accent-color;
+}
+.form-field__input {
+  display: flex;
+  padding-left: 42px;
+
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  outline-color: $accent-color;
+}
+.form-field__input:focus + .form-field__icon {
+  fill: $accent-color;
+  transform: fill 250ms $timing-function;
+}
+
+/*************** Комметарий************** */
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-textarea__input {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  outline-color: $accent-color;
+
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 11px 12px;
+  resize: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+/* *********чекбокс********* */
+.form-label {
+  font-size: 12px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: transform 250ms $timing-function;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+.form-label__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.form-label__icon {
+  margin-right: 7px;
+  display: block;
+
+  transition: transform 250ms $timing-function;
+}
+
+.form-label__checkbox:checked + .form-label__icon {
+  background-color: $accent-color;
+  fill: $accent-color;
+  transform: scale(1.2) 250ms $timing-function;
+
+  border-radius: 2px;
+  background-image: url(../image/vector.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.form-label__link {
+  color: $accent-color;
+}
