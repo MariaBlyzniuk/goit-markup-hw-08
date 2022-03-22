@@ -17,15 +17,6 @@
   }
 }
 
-// .menu-open-btn .icon-close {
-//   display: none;
-// }
-// .menu-open-btn .is-open .icon-close {
-//   display: block;
-// }
-// .menu-open-btn .is-open .icon-open {
-//   display: none;
-// }
 .menu-close-btn {
   display: block;
   border: none;
@@ -40,9 +31,6 @@
     transition: fill 250ms $timing-function;
   }
 }
-// .icon-close {
-//   z-index: 1;
-// }
 
 .mobile-menu {
   display: none;
