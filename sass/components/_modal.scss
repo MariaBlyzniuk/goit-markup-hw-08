@@ -23,22 +23,26 @@
   transform: translate(-50%, -50%) scale(0.5);
 }
 .modal {
-  position: fixed;
+  position: relative;
   visibility: visible;
   padding: 40px;
   max-width: 450px;
+  border-radius: 4px;
+  transform: scale(1);
+  transition: scale 250ms $timing-function;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:480px) {
     position: absolute;
-    transform: translate(-50%, -50%) scale(1);
+
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     min-width: 450px;
-    height: 609px;
+    // height: 609px;
   }
   @media screen and(min-width:1200px) {
     min-width: 528px;
-    height: 581px;
+    // height: 581px;
   }
 
   background-color: $first-background-color;
