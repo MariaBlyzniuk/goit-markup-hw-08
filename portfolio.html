@@ -21,9 +21,9 @@
                 </button>
                 <ul class="mobile-nav">
                     <li class="mobile-nav__item"> <a href="./index.html"
-                            class="mobile-menu--baseStyle mobile-nav__link mobile-nav__link--current ">Студия</a></li>
+                            class="mobile-menu--baseStyle mobile-nav__link  ">Студия</a></li>
                     <li class="mobile-nav__item"> <a href="./portfolio.html"
-                            class="mobile-menu--baseStyle mobile-nav__link">Портфолио</a></li>
+                            class="mobile-menu--baseStyle mobile-nav__link mobile-nav__link--current">Портфолио</a></li>
                     <li class="mobile-nav__item"> <a href="" class="mobile-menu--baseStyle mobile-nav__link">Контакты</a>
                     </li>
                 </ul>
@@ -83,7 +83,7 @@
             </li>
         </ul>
 
-        <button type="button" class="menu-open-btn">
+        <button type="button" class="menu-open-btn js-open-menu">
             <svg class="" width="40" height="40">
                 <use href="./image/mobile.svg#icon-open"></use>
             </svg>
@@ -110,12 +110,11 @@
                                 <a href="" class="projects__link"> 
                                     <div class="projects__thumb">
                                         <picture>
-                                            <source srcset="./image/project1.jpg 1x, ./image/project1@2x.jpg 2x" media="(min-width:1200px)">
-                                            <source srcset="./image/project1_tab.jpg 1x, ./image/project1_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project1_tel.jpg 1x, ./image/project1_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project1.jpg 1x, ./image/project1@2x.jpg 2x" media="(min-width:1200px)"  >
+                                            <source srcset="./image/project1_tab.jpg 1x, ./image/project1_tab@2x.jpg 2x" media="(min-width:768px)" >
+                                            <source srcset="./image/project1_tel.jpg 1x, ./image/project1_tel@2x.jpg 2x" media="(max-width:767px)" >
                                             <img src="./image/project1.jpg" 
-                                            alt="изображение проэкта" 
-                                            min-width="370">
+                                            alt="изображение проэкта">
                                     </picture>
                                     <div class="projects__overlay">
                                         <div><p class="projects__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -134,10 +133,11 @@
                                         <picture>
                                             <source srcset="./image/project2.jpg 1x, ./image/project2@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project2_tab.jpg 1x, ./image/project2_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project2_tel.jpg 1x, ./image/project2_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project2_tel.jpg 1x, ./image/project2_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project2.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -159,10 +159,10 @@
                                         <picture>
                                             <source srcset="./image/project3.jpg 1x, ./image/project3@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project3_tab.jpg 1x, ./image/project3_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project3_tel.jpg 1x, ./image/project3_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project3_tel.jpg 1x, ./image/project3_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project3.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -184,10 +184,10 @@
                                         <picture>
                                             <source srcset="./image/project4.jpg 1x, ./image/project4@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project4_tab.jpg 1x, ./image/project4_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project4_tel.jpg 1x, ./image/project4_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project4_tel.jpg 1x, ./image/project4_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project4.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -209,10 +209,10 @@
                                         <picture>
                                             <source srcset="./image/project5.jpg 1x, ./image/project5@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project5_tab.jpg 1x, ./image/project5_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project5_tel.jpg 1x, ./image/project5_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project5_tel.jpg 1x, ./image/project5_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project5.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -234,10 +234,10 @@
                                         <picture>
                                             <source srcset="./image/project6.jpg 1x, ./image/project6@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project6_tab.jpg 1x, ./image/project6_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project6_tel.jpg 1x, ./image/project6_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project6_tel.jpg 1x, ./image/project6_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project6.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -259,10 +259,10 @@
                                         <picture>
                                             <source srcset="./image/project7.jpg 1x, ./image/project7@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project7_tab.jpg 1x, ./image/project7_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project7_tel.jpg 1x, ./image/project7_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project7_tel.jpg 1x, ./image/project7_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project7.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -284,10 +284,10 @@
                                         <picture>
                                             <source srcset="./image/project8.jpg 1x, ./image/project8@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project8_tab.jpg 1x, ./image/project8_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project8_tel.jpg 1x, ./image/project8_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project8_tel.jpg 1x, ./image/project8_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project8.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                           >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>
@@ -309,10 +309,10 @@
                                         <picture>
                                             <source srcset="./image/project9.jpg 1x, ./image/project9@2x.jpg 2x" media="(min-width:1200px)">
                                             <source srcset="./image/project9_tab.jpg 1x, ./image/project9_tab@2x.jpg 2x" media="(min-width:768px)">
-                                            <source srcset="./image/project9_tel.jpg 1x, ./image/project9_tel@2x.jpg 2x" media="(min-width:480px)">
+                                            <source srcset="./image/project9_tel.jpg 1x, ./image/project9_tel@2x.jpg 2x" media="(max-width:767px)">
                                             <img src="./image/project9.jpg" 
                                             alt="изображение проэкта" 
-                                            min-width="370">
+                                            >
                                     </picture>
                                     <div class="projects__overlay">
                                         <div>

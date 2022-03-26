@@ -15,7 +15,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
@@ -77,6 +79,10 @@
   }
 }
 .footer__container--TabletStyles {
+  @media screen and(max-width:1199px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and(min-width:768px) {
     display: flex;
     align-items: baseline;
@@ -89,7 +95,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 
   @media screen and(min-width:1200px) {
     margin-left: 70px;
@@ -99,8 +104,7 @@
 }
 .socialnet__list {
   display: flex;
-  //   margin-top: 20px;
-}
+  }
 .socialnet__text {
   margin: 0;
   margin-bottom: 20px;
@@ -151,8 +155,6 @@
     margin-left: 93px;
   }
 }
-// .subscription__form {
-// }
 
 .subscribe {
   @media screen and(min-width:1200px) {
@@ -215,8 +217,7 @@
 .subscribe__footer-button {
   display: flex;
   align-items: center;
-  //   justify-content: center;
-
+  
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -235,5 +236,5 @@
   position: absolute;
   display: block;
   margin-left: 120px;
-  //   margin-left: 10px;
+  
 }

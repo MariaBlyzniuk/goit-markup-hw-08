@@ -427,9 +427,11 @@ section {
   }
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
 }
 @media screen and (max-width: 1199px) {
   .contacts {
@@ -474,7 +476,6 @@ section {
 }
 
 .overlay {
-  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -490,7 +491,6 @@ section {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    max-width: 768px;
     min-height: 400px;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/HeroTablet1x.jpg");
   }
@@ -565,6 +565,7 @@ section {
   z-index: 1;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px 0 15px;
 }
 
 .backdrop.is-hidden {
@@ -579,16 +580,22 @@ section {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
   visibility: visible;
   padding: 40px;
-  min-width: 450px;
-  height: 609px;
+  max-width: 450px;
   background-color: #ffffff;
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    min-width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -912,6 +919,15 @@ section {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .section__title--styleTel {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
 .team__item {
   border: 1px solid #eeeeee;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -999,6 +1015,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+  margin-right: -30px;
 }
 @media screen and (min-width: 768px) {
   .clients {
@@ -1009,19 +1026,20 @@ section {
 }
 
 .clients__item {
-  width: calc(50% - 30px);
+  flex-basis: calc(50% - 30px);
   height: 92px;
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc(33.3333333333% - 30px);
+    flex-basis: calc(33.3333333333% - 30px);
     margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(16.6666666667% - 30px);
+    flex-basis: calc(16.6666666667% - 30px);
   }
 }
 .clients__item:nth-child(2n+1) {
@@ -1053,8 +1071,12 @@ section {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -15px;
   margin-right: -8px;
+}
+@media screen and (max-width: 768px) {
+  .filters {
+    margin-bottom: -15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filters {
@@ -1100,7 +1122,7 @@ section {
 
 /********************************** Проэкты ******************************/
 .projects {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: -30px;
 }
 @media screen and (min-width: 768px) {
@@ -1108,6 +1130,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin-top: 50px;
   }
 }
 
@@ -1126,11 +1154,6 @@ section {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .projects__item:nth-child(3n) {
-    margin-right: 0;
-  }
-}
 .projects__link {
   display: flex;
   flex-direction: column;
@@ -1212,7 +1235,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .studio {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .studio {
@@ -1279,6 +1306,11 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__container--TabletStyles {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__container--TabletStyles {
     display: flex;
@@ -1292,7 +1324,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .socialnet {
@@ -1449,6 +1480,7 @@ section {
   display: block;
   border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 .menu-open-btn:hover .icon-open {
   fill: #2196f3;

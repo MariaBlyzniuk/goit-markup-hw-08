@@ -10,7 +10,14 @@
     }
   }
 }
-
+.section__title--styleTel {
+  @media screen and(max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
 .team__item {
   border: 1px solid #eeeeee;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
@@ -26,21 +33,6 @@
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
   }
-
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
-
-  // @media screen and(min-width: 768px) {
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
-  // @media screen and(min-width: 768px) {
-  //   &:not(:last-child) {
-  //     margin-bottom: 0;
-  //   }
-  // }
 }
 
 .team__thumb {

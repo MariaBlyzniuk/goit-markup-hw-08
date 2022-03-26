@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+  margin-right: -30px;
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -9,17 +10,16 @@
   }
 }
 .clients__item {
-  // width: 170px;
-  width: calc(100% / 2 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
   height: 92px;
   margin-bottom: 30px;
-  // margin-right: 30px;
+  margin-right: 30px;
   @media screen and(min-width: 768px) {
-    width: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 6 - 30px);
+    flex-basis: calc(100% / 6 - 30px);
   }
   &:nth-child(2n + 1) {
     margin-right: 30px;
